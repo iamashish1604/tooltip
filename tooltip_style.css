@@ -1,0 +1,35 @@
+body{
+    background-color: lightGrey;
+}
+
+.tooltip-container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip{
+    position: relative;
+    height:30vh;
+    width:20vw;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid green;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip:hover{
+    color:red;
+}
+.tooltip::after{
+    position:absolute;
+    top:100%;
+    left:50%;
+    content:'';
+    border-width:15px;
+    border-style:solid;
+    border-color:white transparent transparent transparent;
+}
